@@ -1,0 +1,332 @@
+Start testing: Sep 07 00:50 IST
+----------------------------------------------------------
+1/15 Testing: wrapping_integers_cmp
+1/15 Test: wrapping_integers_cmp
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/wrapping_integers_cmp"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"wrapping_integers_cmp" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_cmp" end time: Sep 07 00:50 IST
+"wrapping_integers_cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/15 Testing: wrapping_integers_unwrap
+2/15 Test: wrapping_integers_unwrap
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/wrapping_integers_unwrap"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"wrapping_integers_unwrap" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+`unwrap(WrappingInt32(1), WrappingInt32(0), 0)` should have been `1ul`, but the former is
+	0
+and the latter is
+	1
+ (at line 15)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"wrapping_integers_unwrap" end time: Sep 07 00:50 IST
+"wrapping_integers_unwrap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/15 Testing: wrapping_integers_wrap
+3/15 Test: wrapping_integers_wrap
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/wrapping_integers_wrap"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"wrapping_integers_wrap" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"wrapping_integers_wrap" end time: Sep 07 00:50 IST
+"wrapping_integers_wrap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/15 Testing: wrapping_integers_roundtrip
+4/15 Test: wrapping_integers_roundtrip
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/wrapping_integers_roundtrip"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"wrapping_integers_roundtrip" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Expected unwrap(wrap()) to recover same value, and it didn't!
+  unwrap(wrap(value, isn), isn, checkpoint) did not equal value
+  where value = 1970433348286244205, isn = 4005674866, and checkpoint = 1970433348286244205
+  (Difference between value and checkpoint is 0.)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"wrapping_integers_roundtrip" end time: Sep 07 00:50 IST
+"wrapping_integers_roundtrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/15 Testing: byte_stream_construction
+5/15 Test: byte_stream_construction
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/byte_stream_construction"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"byte_stream_construction" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: input_ended: 0
+
+Failure message:
+	The ByteStream should have had input_ended equal to 0 but instead it was 112
+
+List of steps that executed successfully:
+	Initialized with (capacity=15)
+
+Exception: The test "construction" failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"byte_stream_construction" end time: Sep 07 00:50 IST
+"byte_stream_construction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/15 Testing: byte_stream_one_write
+6/15 Test: byte_stream_one_write
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/byte_stream_one_write"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"byte_stream_one_write" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: input_ended: 0
+
+Failure message:
+	The ByteStream should have had input_ended equal to 0 but instead it was 224
+
+List of steps that executed successfully:
+	Initialized with (capacity=15)
+	     Action: write "cat" to the stream
+
+Exception: The test "write-end-pop" failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"byte_stream_one_write" end time: Sep 07 00:50 IST
+"byte_stream_one_write" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/15 Testing: byte_stream_two_writes
+7/15 Test: byte_stream_two_writes
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/byte_stream_two_writes"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"byte_stream_two_writes" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: input_ended: 0
+
+Failure message:
+	The ByteStream should have had input_ended equal to 0 but instead it was 176
+
+List of steps that executed successfully:
+	Initialized with (capacity=15)
+	     Action: write "cat" to the stream
+
+Exception: The test "write-write-end-pop-pop" failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"byte_stream_two_writes" end time: Sep 07 00:50 IST
+"byte_stream_two_writes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/15 Testing: byte_stream_capacity
+8/15 Test: byte_stream_capacity
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/byte_stream_capacity"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"byte_stream_capacity" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	     Action: write "cat" to the stream
+
+Failure message:
+	The ByteStream should have had bytes_written equal to 2 but instead it was 140730783849776
+
+List of steps that executed successfully:
+	Initialized with (capacity=2)
+
+Exception: The test "overwrite" failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"byte_stream_capacity" end time: Sep 07 00:50 IST
+"byte_stream_capacity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/15 Testing: byte_stream_many_writes
+9/15 Test: byte_stream_many_writes
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/byte_stream_many_writes"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"byte_stream_many_writes" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"byte_stream_many_writes" end time: Sep 07 00:50 IST
+"byte_stream_many_writes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/15 Testing: recv_connect
+10/15 Test: recv_connect
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/recv_connect"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"recv_connect" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: window 4000
+
+Failure message:
+	The TCPReceiver reported window `0`, but it was expected to be `4000`
+
+List of steps that executed successfully:
+	Initialized with (capacity=4000)
+
+The TCPReceiver reported window `0`, but it was expected to be `4000`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"recv_connect" end time: Sep 07 00:50 IST
+"recv_connect" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/15 Testing: recv_transmit
+11/15 Test: recv_transmit
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/recv_transmit"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"recv_transmit" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Action:      segment arrives Header(flags=S,seqno=0,ack=0,win=0)
+
+Failure message:
+	TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=0,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+
+List of steps that executed successfully:
+	Initialized with (capacity=4000)
+
+TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=0,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"recv_transmit" end time: Sep 07 00:50 IST
+"recv_transmit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/15 Testing: recv_window
+12/15 Test: recv_window
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/recv_window"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"recv_window" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Action:      segment arrives Header(flags=S,seqno=23452,ack=0,win=0)
+
+Failure message:
+	TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=23452,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+
+List of steps that executed successfully:
+	Initialized with (capacity=4000)
+
+TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=23452,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"recv_window" end time: Sep 07 00:50 IST
+"recv_window" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/15 Testing: recv_reorder
+13/15 Test: recv_reorder
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/recv_reorder"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"recv_reorder" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Action:      segment arrives Header(flags=S,seqno=2532250194,ack=0,win=0)
+
+Failure message:
+	TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=2532250194,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+
+List of steps that executed successfully:
+	Initialized with (capacity=2358)
+
+TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=2532250194,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"recv_reorder" end time: Sep 07 00:50 IST
+"recv_reorder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/15 Testing: recv_close
+14/15 Test: recv_close
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/recv_close"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"recv_close" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Action:      segment arrives Header(flags=S,seqno=3017574015,ack=0,win=0)
+
+Failure message:
+	TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=3017574015,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+
+List of steps that executed successfully:
+	Initialized with (capacity=4000)
+	Expectation: in state `waiting for SYN: ackno is empty`
+
+TCPReceiver::segment_received() reported `(no SYN received, so no ackno available)` in response to `Header(flags=S,seqno=3017574015,ack=0,win=0)`, but it was expected to report `(SYN received, so ackno available)`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"recv_close" end time: Sep 07 00:50 IST
+"recv_close" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/15 Testing: recv_special
+15/15 Test: recv_special
+Command: "/home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests/recv_special"
+Directory: /home/srimant_ubuntu/CN_Work/assignment2/assignment2/build/tests
+"recv_special" start time: Sep 07 00:50 IST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"recv_special" end time: Sep 07 00:50 IST
+"recv_special" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 07 00:50 IST

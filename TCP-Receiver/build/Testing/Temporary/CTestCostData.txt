@@ -1,0 +1,24 @@
+wrapping_integers_cmp 131 2.9746e-05
+wrapping_integers_unwrap 59 1.9771e-05
+wrapping_integers_wrap 130 8.19432e-06
+wrapping_integers_roundtrip 58 0.0169651
+byte_stream_construction 142 1.00162e-05
+byte_stream_one_write 132 8.88345e-06
+byte_stream_two_writes 132 8.42808e-06
+byte_stream_capacity 119 0.00435162
+byte_stream_many_writes 145 9.61e-06
+recv_connect 36 3.196e-05
+recv_transmit 33 0.001389
+recv_window 34 4.39117e-05
+recv_reorder 34 0.000148157
+recv_close 33 0.000113554
+recv_special 131 2.32401e-05
+fsm_stream_reassembler_cap 97 0.000737749
+fsm_stream_reassembler_single 88 1.59509e-05
+fsm_stream_reassembler_seq 99 2.30655e-05
+fsm_stream_reassembler_dup 96 5.31936e-05
+fsm_stream_reassembler_holes 95 1.37427e-05
+fsm_stream_reassembler_many 97 0.0683455
+fsm_stream_reassembler_overlapping 92 1.65769e-05
+fsm_stream_reassembler_win 97 0.0797633
+---
